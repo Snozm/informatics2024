@@ -5,10 +5,10 @@ public class Program
 {
     public static void Main()
     {
-        int task
+        int task;
         do{
-            Console.WriteLine("Choose a task: \n Task 1: reverse an integer \n Task 2: calculate an average \n Task 3: solve a linear equation")
-            int task = int.Parse(Console.ReadLine());
+            Console.WriteLine("Choose a task: \n Task 1: reverse an integer \n Task 2: calculate an average \n Task 3: solve a linear equation");
+            task = int.Parse(Console.ReadLine());
         }while(task < 1 || task > 3);
 
         switch(task){
@@ -54,7 +54,7 @@ public class Program
         int reversed = 0;
         while (num > 0)
         {
-            reversed *= 10
+            reversed *= 10;
             reversed += num % 10;
             num /= 10;
         }
