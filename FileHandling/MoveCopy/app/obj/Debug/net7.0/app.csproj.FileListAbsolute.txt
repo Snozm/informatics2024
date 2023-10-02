@@ -1,0 +1,14 @@
+H:\informatics2024\FileHandling\MoveCopy\app\bin\Debug\net7.0\app.exe
+H:\informatics2024\FileHandling\MoveCopy\app\bin\Debug\net7.0\app.deps.json
+H:\informatics2024\FileHandling\MoveCopy\app\bin\Debug\net7.0\app.runtimeconfig.json
+H:\informatics2024\FileHandling\MoveCopy\app\bin\Debug\net7.0\app.dll
+H:\informatics2024\FileHandling\MoveCopy\app\bin\Debug\net7.0\app.pdb
+H:\informatics2024\FileHandling\MoveCopy\app\obj\Debug\net7.0\app.GeneratedMSBuildEditorConfig.editorconfig
+H:\informatics2024\FileHandling\MoveCopy\app\obj\Debug\net7.0\app.AssemblyInfoInputs.cache
+H:\informatics2024\FileHandling\MoveCopy\app\obj\Debug\net7.0\app.AssemblyInfo.cs
+H:\informatics2024\FileHandling\MoveCopy\app\obj\Debug\net7.0\app.csproj.CoreCompileInputs.cache
+H:\informatics2024\FileHandling\MoveCopy\app\obj\Debug\net7.0\app.dll
+H:\informatics2024\FileHandling\MoveCopy\app\obj\Debug\net7.0\refint\app.dll
+H:\informatics2024\FileHandling\MoveCopy\app\obj\Debug\net7.0\app.pdb
+H:\informatics2024\FileHandling\MoveCopy\app\obj\Debug\net7.0\app.genruntimeconfig.cache
+H:\informatics2024\FileHandling\MoveCopy\app\obj\Debug\net7.0\ref\app.dll
