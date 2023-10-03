@@ -1,11 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net7.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net7.0": []
   },
   "packageFolders": {
     "C:\\Users\\Snozm\\.nuget\\packages\\": {}
@@ -13,24 +13,24 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Snozm\\Desktop\\Codes\\informatics\\FileHandling\\CWTask\\Example1.csproj",
-      "projectName": "Example1",
-      "projectPath": "c:\\Users\\Snozm\\Desktop\\Codes\\informatics\\FileHandling\\CWTask\\Example1.csproj",
+      "projectUniqueName": "C:\\Users\\Snozm\\Desktop\\Codes\\informatics\\FileHandling\\MoveCopy\\MoveCopy.csproj",
+      "projectName": "MoveCopy",
+      "projectPath": "C:\\Users\\Snozm\\Desktop\\Codes\\informatics\\FileHandling\\MoveCopy\\MoveCopy.csproj",
       "packagesPath": "C:\\Users\\Snozm\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Snozm\\Desktop\\Codes\\informatics\\FileHandling\\CWTask\\obj\\",
+      "outputPath": "C:\\Users\\Snozm\\Desktop\\Codes\\informatics\\FileHandling\\MoveCopy\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Snozm\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "net7.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "projectReferences": {}
         }
       },
@@ -41,8 +41,8 @@
       }
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "net7.0": {
+        "targetAlias": "net7.0",
         "imports": [
           "net461",
           "net462",
@@ -54,24 +54,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.22, 6.0.22]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[6.0.22, 6.0.22]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.22, 6.0.22]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.22, 6.0.22]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

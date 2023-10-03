@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "lLH5+/f2OJ0AooRWIJqSsdHTc4PXsM8W89nupn7Io5079eVti9RHTo6WIwQliTnKt2LjPxZPUQzGHGyVL4iyZw==",
+  "dgSpecHash": "sUfohoeapDZxkc0mH77ViK0VNkNk7af9E/GTkeh5M8+cshONxvfbEBgPb/USFRLzIgWSihVbCbTNdQTwv1+Dfw==",
   "success": true,
-  "projectFilePath": "h:\\informatics2024\\Review\\StudentClass\\Example1.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "c:\\Users\\Snozm\\Desktop\\Codes\\informatics\\Review\\StudentClass\\Example1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Snozm\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.22\\microsoft.netcore.app.ref.6.0.22.nupkg.sha512",
+    "C:\\Users\\Snozm\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.22\\microsoft.windowsdesktop.app.ref.6.0.22.nupkg.sha512",
+    "C:\\Users\\Snozm\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.22\\microsoft.aspnetcore.app.ref.6.0.22.nupkg.sha512",
+    "C:\\Users\\Snozm\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.22\\microsoft.netcore.app.host.win-x64.6.0.22.nupkg.sha512"
+  ],
   "logs": []
 }
