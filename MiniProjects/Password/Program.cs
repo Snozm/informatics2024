@@ -7,7 +7,7 @@ public class Program{
         string numbers = "0123456789";
         string letters = "abcdefghijklmnopqrstuvwxyz";
         string capital = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        string special = "!@#$%^&*()_+{}[]";
+        string special = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
 
         bool hasNumber;
         bool hasLetter;
