@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FqFAGnhaDtCyR1ASvWsSvJRwEGA8c5o652VptQOFzcU6yZ3uYJ9DPgIDWvCPyiPn8uv9FNsJ5rN8+f6ajN6ZhA==",
+  "dgSpecHash": "G/ZGuXA+ZB6uYH3qHw/kx9/NF5aHzfXZ1ktdXVveJ1zBzAetMATzP1aI5GtdrDcE9aNsp0D5S0spfJKL36LO2g==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Snozm\\Desktop\\Codes\\informatics\\FileHandling\\CWTask\\Example1.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Snozm\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.22\\microsoft.netcore.app.ref.6.0.22.nupkg.sha512",
-    "C:\\Users\\Snozm\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.22\\microsoft.windowsdesktop.app.ref.6.0.22.nupkg.sha512",
-    "C:\\Users\\Snozm\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.22\\microsoft.aspnetcore.app.ref.6.0.22.nupkg.sha512",
-    "C:\\Users\\Snozm\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.22\\microsoft.netcore.app.host.win-x64.6.0.22.nupkg.sha512"
-  ],
+  "projectFilePath": "H:\\informatics2024\\FileHandling\\CWTask\\Example1.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

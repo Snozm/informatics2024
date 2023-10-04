@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Snozm\\Desktop\\Codes\\informatics\\FileHandling\\CWTask\\Example1.csproj": {}
+    "H:\\informatics2024\\FileHandling\\CWTask\\Example1.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Snozm\\Desktop\\Codes\\informatics\\FileHandling\\CWTask\\Example1.csproj": {
+    "H:\\informatics2024\\FileHandling\\CWTask\\Example1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Snozm\\Desktop\\Codes\\informatics\\FileHandling\\CWTask\\Example1.csproj",
+        "projectUniqueName": "H:\\informatics2024\\FileHandling\\CWTask\\Example1.csproj",
         "projectName": "Example1",
-        "projectPath": "c:\\Users\\Snozm\\Desktop\\Codes\\informatics\\FileHandling\\CWTask\\Example1.csproj",
-        "packagesPath": "C:\\Users\\Snozm\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Snozm\\Desktop\\Codes\\informatics\\FileHandling\\CWTask\\obj\\",
+        "projectPath": "H:\\informatics2024\\FileHandling\\CWTask\\Example1.csproj",
+        "packagesPath": "C:\\Users\\an.petrov24\\.nuget\\packages\\",
+        "outputPath": "H:\\informatics2024\\FileHandling\\CWTask\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Snozm\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\an.petrov24\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -48,30 +54,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.22, 6.0.22]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.22, 6.0.22]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.22, 6.0.22]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.22, 6.0.22]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

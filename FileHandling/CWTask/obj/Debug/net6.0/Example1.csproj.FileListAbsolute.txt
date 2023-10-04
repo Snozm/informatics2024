@@ -40,3 +40,17 @@ H:\informatics2024\FileHandling\obj\Debug\net6.0\refint\Example1.dll
 H:\informatics2024\FileHandling\obj\Debug\net6.0\Example1.pdb
 H:\informatics2024\FileHandling\obj\Debug\net6.0\Example1.genruntimeconfig.cache
 H:\informatics2024\FileHandling\obj\Debug\net6.0\ref\Example1.dll
+H:\informatics2024\FileHandling\CWTask\bin\Debug\net6.0\Example1.exe
+H:\informatics2024\FileHandling\CWTask\bin\Debug\net6.0\Example1.deps.json
+H:\informatics2024\FileHandling\CWTask\bin\Debug\net6.0\Example1.runtimeconfig.json
+H:\informatics2024\FileHandling\CWTask\bin\Debug\net6.0\Example1.dll
+H:\informatics2024\FileHandling\CWTask\bin\Debug\net6.0\Example1.pdb
+H:\informatics2024\FileHandling\CWTask\obj\Debug\net6.0\Example1.GeneratedMSBuildEditorConfig.editorconfig
+H:\informatics2024\FileHandling\CWTask\obj\Debug\net6.0\Example1.AssemblyInfoInputs.cache
+H:\informatics2024\FileHandling\CWTask\obj\Debug\net6.0\Example1.AssemblyInfo.cs
+H:\informatics2024\FileHandling\CWTask\obj\Debug\net6.0\Example1.csproj.CoreCompileInputs.cache
+H:\informatics2024\FileHandling\CWTask\obj\Debug\net6.0\Example1.dll
+H:\informatics2024\FileHandling\CWTask\obj\Debug\net6.0\refint\Example1.dll
+H:\informatics2024\FileHandling\CWTask\obj\Debug\net6.0\Example1.pdb
+H:\informatics2024\FileHandling\CWTask\obj\Debug\net6.0\Example1.genruntimeconfig.cache
+H:\informatics2024\FileHandling\CWTask\obj\Debug\net6.0\ref\Example1.dll
