@@ -13,7 +13,7 @@ namespace CSV
     {
         static void Main(string[] args)
         {
-            using(var reader = new StreamReader("Students.csv"))
+            using(var reader = new StreamReader("H:\\informatics2024\\CSV\\Students.csv"))
             
             using (var csv =   new CsvReader(reader, CultureInfo.InvariantCulture))
             {
@@ -33,7 +33,7 @@ namespace CSV
                 {
                     foreach (var item in queryOne)
                     {
-                        Console.WriteLine(item);
+                        Console.WriteLine(item.first_name);
                     }
                 }
 
@@ -44,7 +44,7 @@ namespace CSV
                 Console.WriteLine("Students sorted by GPA:");
                 foreach (var item in queryTwo)
                 {
-                    Console.WriteLine(item);
+                    Console.WriteLine($"{item.first_name}: GPA: {item.GPA}");
                 }
 
                 var queryThree = from record in records
@@ -60,12 +60,12 @@ namespace CSV
                 {
                     foreach (var item in queryThree)
                     {
-                        Console.WriteLine(item);
+                        Console.WriteLine(item.first_name);
                     }
                 }
 
                 var queryFour = from record in records
-                               where record.gender == "Female" && (float)record.GPA >= 4.0 
+                               where record.gender == "Female" && float.Parse(record.GPA) >= 4.0 
                                select record;
 
                 Console.WriteLine("Female students with GPA of 4.0 or higher:");
@@ -77,7 +77,7 @@ namespace CSV
                 {
                     foreach (var item in queryFour)
                     {
-                        Console.WriteLine(item);
+                        Console.WriteLine(item.first_name);
                     }
                 }
             }
