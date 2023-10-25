@@ -5,34 +5,13 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        Dictionary<string, School> schools = new Dictionary<string, School>();
+        Library library = new Library();
 
-        schools.Add("ACS", new School());
-        string[] courses = { "math", "physics", "informatics" };
-        schools["ACS"].AddStudent("Andrey", courses);
-        schools["ACS"].AddStudent("Vladi", courses);
-        courses[2] = "IT";
-        schools["ACS"].AddStudent("Martin", courses);
+        library.AddBook("House of Leaves");
 
-        schools.Add("SMG", new School());
-        string[] smgCourses = { "math", "physics", "informatics", "art" };
-        schools["SMG"].AddStudent("Daniel", smgCourses);
-
-        foreach (KeyValuePair<string, School> school in schools)
-        {
-            Console.WriteLine($"Name of school: {school.Key}");
-            foreach (KeyValuePair<string, string[]> student in school.Value.GetStudents())
-            {
-                Console.WriteLine($"Student name: {student.Key}");
-                Console.WriteLine("Courses taken: ");
-                foreach (string course in student.Value)
-                {
-                    Console.Write($"{course} ");
-                }
-                Console.WriteLine();
-            }
-            Console.WriteLine();
-        }
+        library.BorrowBook("Vladi", "House of Leaves");
+        library.BorrowBook("Vladi", "The Great Gatsby");
+        library.BorrowBook("Martin", "House of Leaves");
     }
 }
 public class Library
@@ -43,7 +22,7 @@ public class Library
     public Library()
     {
         books = new Dictionary<string, string>();
-        borrowers = new Dictionary<string, DateTime>();
+        borrowers = new Dictionary<string, Dictionary<string, DateTime>>();
     }
     public void AddBook(string name)
     {
@@ -56,29 +35,24 @@ public class Library
     }
     public void BorrowBook(string borrower, string book)
     {
-        if (books.ContainsKey(book))
+        if (!books.ContainsKey(book))
         {
-            books[book] = borrower;
-            if (borrowers.ContainsKey(borrower))
-            {
-                DateTime now = DateTime.Now;
-                DateTime monthDue = (now.Month + 2) % 12 + 1; //books due in 2 months, so check if month is valid and add 1 to return to 1-12 range
-                borrowers[borrower].Add(book, new Datetime(now.Year, monthDue, 1);
-            }
+            Console.WriteLine($"{book} isn't in stock.");
             return;
         }
-        Console.WriteLine("Book isn't in stock.")
-    }
-    public string[] GetCourses(string name)
-    {
-        foreach (KeyValuePair<string, string[]> student in students)
-        {
-            if (student.Key == name)
-            {
-                return student.Value;
-            }
+        else if(books[book] != "avaliable"){
+            Console.WriteLine($"{book} is already borrowed by {books[book]}");
+            return;
         }
-        string[] none = { "student not found" };
-        return none;
+        books[book] = borrower;
+            if (!borrowers.ContainsKey(borrower))
+            {
+                borrowers.Add(borrower, new Dictionary<string, DateTime>());
+            }
+            DateTime now = DateTime.Now;
+            int monthDue = (now.Month + 2) % 12 + 1; //books due in 2 months, so check if month is valid and add 1 to return to 1-12 range
+            borrowers[borrower].Add(book, new DateTime(now.Year, monthDue, 1));
+            Console.WriteLine($"{book} borrowed by {borrower}.");
+            return;
     }
 }
