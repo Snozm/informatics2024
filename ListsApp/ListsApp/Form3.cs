@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 using System.Security.Cryptography;
 using System.Text.RegularExpressions;
 
@@ -37,12 +37,16 @@ namespace ListsApp
             }
             SqlConnection con = new SqlConnection(@"Data Source=LAB108PC15\SQLEXPRESS; Initial Catalog=Login; Integrated Security=True;");
             con.Open();
-            string query = "SELECT COUNT(1) FROM Users WHERE email=@email AND hash=@hash";
+            string query = "SELECT date FROM Users WHERE email=@email";
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.CommandType = CommandType.Text;
             cmd.Parameters.AddWithValue("@email", usernameTextBox.Text);
-            cmd.Parameters.AddWithValue("@hash", passwordTextBox1.Text);
-
+            string date = Convert.ToString(cmd.ExecuteScalar());
+            query = "SELECT COUNT(*) FROM Users WHERE email=@email AND hash=@hash";
+            cmd = new SqlCommand(query, con);
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.AddWithValue("@email", usernameTextBox.Text);
+            cmd.Parameters.AddWithValue("@hash", hashPassword($"{passwordTextBox1.Text}{date}"));
             int count = Convert.ToInt32(cmd.ExecuteScalar());
             if (count == 1)
             {
