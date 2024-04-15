@@ -19,7 +19,8 @@ namespace ListsApp
         public Form3()
         {
             InitializeComponent();
-            SqlConnection con = new SqlConnection(@"Data Source=LAB108PC15\SQLEXPRESS; Initial Catalog=Login; Integrated Security=True;");
+            SqlConnection con = new SqlConnection(@"Data Source=IDEAPAD-SNOZM; Initial Catalog=Login; Integrated Security=True;");
+            //SqlConnection con = new SqlConnection(@"Data Source=LAB108PC15\SQLEXPRESS; Initial Catalog=Login; Integrated Security=True;");
             con.Open();
             string query = "SELECT COUNT(*) FROM Users";
             SqlCommand cmd = new SqlCommand(query, con);
@@ -35,7 +36,8 @@ namespace ListsApp
                 myForm.Show();
                 return;
             }
-            SqlConnection con = new SqlConnection(@"Data Source=LAB108PC15\SQLEXPRESS; Initial Catalog=Login; Integrated Security=True;");
+            SqlConnection con = new SqlConnection(@"Data Source=IDEAPAD-SNOZM; Initial Catalog=Login; Integrated Security=True;");
+            //SqlConnection con = new SqlConnection(@"Data Source=LAB108PC15\SQLEXPRESS; Initial Catalog=Login; Integrated Security=True;");
             con.Open();
             string query = "SELECT date FROM Users WHERE email=@email";
             SqlCommand cmd = new SqlCommand(query, con);
@@ -77,7 +79,8 @@ namespace ListsApp
             }
             string salt = DateTime.Now.ToString();
             string hash = hashPassword($"{passwordTextBox1.Text}{salt}");
-            SqlConnection con = new SqlConnection(@"Data Source=LAB108PC15\SQLEXPRESS;Initial Catalog=Login;Integrated Security=True;");
+            SqlConnection con = new SqlConnection(@"Data Source=IDEAPAD-SNOZM; Initial Catalog=Login; Integrated Security=True;");
+            //SqlConnection con = new SqlConnection(@"Data Source=LAB108PC15\SQLEXPRESS;Initial Catalog=Login;Integrated Security=True;");
             con.Open();
             SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM Users WHERE email=@email", con);
             cmd.Parameters.Add("@email", SqlDbType.NVarChar).Value = usernameTextBox.Text;
