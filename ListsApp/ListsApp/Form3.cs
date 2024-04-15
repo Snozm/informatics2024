@@ -15,7 +15,6 @@ namespace ListsApp
 {
     public partial class Form3 : Form
     {
-        int users = 0;
         public Form3()
         {
             InitializeComponent();
@@ -25,7 +24,6 @@ namespace ListsApp
             string query = "SELECT COUNT(*) FROM Users";
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.CommandType = CommandType.Text;
-            users = Convert.ToInt32(cmd.ExecuteScalar());
         }
 
         private void loginButton_Click(object sender, EventArgs e)
@@ -52,7 +50,7 @@ namespace ListsApp
             int count = Convert.ToInt32(cmd.ExecuteScalar());
             if (count == 1)
             {
-                Form1 myForm = new Form1("user");
+                Form1 myForm = new Form1(usernameTextBox.Text);
                 myForm.Show();
                 return;
             }
@@ -91,9 +89,11 @@ namespace ListsApp
             }
             cmd = new SqlCommand("INSERT INTO Users(email, date, hash) VALUES(@email, @date, @hash)", con);
             cmd.Parameters.Add("@email", SqlDbType.NVarChar).Value = usernameTextBox.Text;
-            users++;
             cmd.Parameters.Add("@date", SqlDbType.DateTime).Value = salt;
             cmd.Parameters.Add("@hash", SqlDbType.NVarChar).Value = hash;
+            cmd.ExecuteNonQuery();
+            cmd = new SqlCommand("INSERT INTO UserProfiless(email) VALUES(@email)", con);
+            cmd.Parameters.AddWithValue("@email", usernameTextBox.Text);
             cmd.ExecuteNonQuery();
             con.Close();
             MessageBox.Show("User was added!");

@@ -14,6 +14,7 @@ namespace ListsApp
         string[] BulgariaCities = { "Sofia", "Plovdiv", "Varna", "Burgas" };
         string[] GreeceCities = { "Athens", "Thessaloniki", "Patras", "Heraklion" };
         string[] NetherlandsCities = { "Amsterdam", "Rotterdam", "The Hague", "Utrecht" };
+        string email;
         //make a strring list called selectedHobbies
         List<string> selectedHobbies = new List<string>();
         List<string> finalHobbies = new List<string>();
@@ -21,9 +22,12 @@ namespace ListsApp
         {
             InitializeComponent();
             cityComboBox.Enabled = false;
+            email = a;
             if (a == "admin")
             {
                 adminButton.Visible = true;
+                usersButton.Visible = true;
+                profileButton.Visible = false;
             }
         }
 
@@ -166,7 +170,7 @@ namespace ListsApp
 
         private void Form1_Enter(object sender, EventArgs e)
         {
-            
+
         }
 
         private void Form1_Activated(object sender, EventArgs e)
@@ -191,6 +195,18 @@ namespace ListsApp
             cityComboBox.ValueMember = "id";
 
             con.Close();
+        }
+
+        private void profileButton_Click(object sender, EventArgs e)
+        {
+            Form4 myForm = new Form4(email);
+            myForm.Show();
+        }
+
+        private void usersButton_Click(object sender, EventArgs e)
+        {
+            Form5 myForm = new Form5();
+            myForm.Show();
         }
     }
 }

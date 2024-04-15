@@ -48,6 +48,8 @@
             removeHobbiesButton = new Button();
             submitButton = new Button();
             adminButton = new Button();
+            profileButton = new Button();
+            usersButton = new Button();
             hobbiesGroupBox.SuspendLayout();
             timeGroupBox.SuspendLayout();
             SuspendLayout();
@@ -61,9 +63,11 @@
             hobbiesGroupBox.Controls.Add(chessCheckBox);
             hobbiesGroupBox.Controls.Add(guitarCheckBox);
             hobbiesGroupBox.Controls.Add(swimmingCheckBox);
-            hobbiesGroupBox.Location = new Point(594, 193);
+            hobbiesGroupBox.Location = new Point(416, 116);
+            hobbiesGroupBox.Margin = new Padding(2);
             hobbiesGroupBox.Name = "hobbiesGroupBox";
-            hobbiesGroupBox.Size = new Size(300, 292);
+            hobbiesGroupBox.Padding = new Padding(2);
+            hobbiesGroupBox.Size = new Size(210, 175);
             hobbiesGroupBox.TabIndex = 0;
             hobbiesGroupBox.TabStop = false;
             hobbiesGroupBox.Text = "Hobbies";
@@ -71,9 +75,10 @@
             // sleepCheckBox
             // 
             sleepCheckBox.AutoSize = true;
-            sleepCheckBox.Location = new Point(57, 247);
+            sleepCheckBox.Location = new Point(40, 148);
+            sleepCheckBox.Margin = new Padding(2);
             sleepCheckBox.Name = "sleepCheckBox";
-            sleepCheckBox.Size = new Size(106, 29);
+            sleepCheckBox.Size = new Size(71, 19);
             sleepCheckBox.TabIndex = 6;
             sleepCheckBox.Text = "Sleeping";
             sleepCheckBox.UseVisualStyleBackColor = true;
@@ -82,9 +87,10 @@
             // readCheckBox
             // 
             readCheckBox.AutoSize = true;
-            readCheckBox.Location = new Point(57, 212);
+            readCheckBox.Location = new Point(40, 127);
+            readCheckBox.Margin = new Padding(2);
             readCheckBox.Name = "readCheckBox";
-            readCheckBox.Size = new Size(102, 29);
+            readCheckBox.Size = new Size(69, 19);
             readCheckBox.TabIndex = 5;
             readCheckBox.Text = "Reading";
             readCheckBox.UseVisualStyleBackColor = true;
@@ -93,9 +99,10 @@
             // gamesCheckBox
             // 
             gamesCheckBox.AutoSize = true;
-            gamesCheckBox.Location = new Point(57, 177);
+            gamesCheckBox.Location = new Point(40, 106);
+            gamesCheckBox.Margin = new Padding(2);
             gamesCheckBox.Name = "gamesCheckBox";
-            gamesCheckBox.Size = new Size(153, 29);
+            gamesCheckBox.Size = new Size(103, 19);
             gamesCheckBox.TabIndex = 4;
             gamesCheckBox.Text = "Playing games";
             gamesCheckBox.UseVisualStyleBackColor = true;
@@ -104,9 +111,10 @@
             // musicCheckBox
             // 
             musicCheckBox.AutoSize = true;
-            musicCheckBox.Location = new Point(57, 142);
+            musicCheckBox.Location = new Point(40, 85);
+            musicCheckBox.Margin = new Padding(2);
             musicCheckBox.Name = "musicCheckBox";
-            musicCheckBox.Size = new Size(181, 29);
+            musicCheckBox.Size = new Size(123, 19);
             musicCheckBox.TabIndex = 3;
             musicCheckBox.Text = "Listening to music";
             musicCheckBox.UseVisualStyleBackColor = true;
@@ -115,9 +123,10 @@
             // chessCheckBox
             // 
             chessCheckBox.AutoSize = true;
-            chessCheckBox.Location = new Point(57, 107);
+            chessCheckBox.Location = new Point(40, 64);
+            chessCheckBox.Margin = new Padding(2);
             chessCheckBox.Name = "chessCheckBox";
-            chessCheckBox.Size = new Size(143, 29);
+            chessCheckBox.Size = new Size(97, 19);
             chessCheckBox.TabIndex = 2;
             chessCheckBox.Text = "Playing chess";
             chessCheckBox.UseVisualStyleBackColor = true;
@@ -126,9 +135,10 @@
             // guitarCheckBox
             // 
             guitarCheckBox.AutoSize = true;
-            guitarCheckBox.Location = new Point(57, 72);
+            guitarCheckBox.Location = new Point(40, 43);
+            guitarCheckBox.Margin = new Padding(2);
             guitarCheckBox.Name = "guitarCheckBox";
-            guitarCheckBox.Size = new Size(146, 29);
+            guitarCheckBox.Size = new Size(99, 19);
             guitarCheckBox.TabIndex = 1;
             guitarCheckBox.Text = "Playing guitar";
             guitarCheckBox.UseVisualStyleBackColor = true;
@@ -137,9 +147,10 @@
             // swimmingCheckBox
             // 
             swimmingCheckBox.AutoSize = true;
-            swimmingCheckBox.Location = new Point(57, 37);
+            swimmingCheckBox.Location = new Point(40, 22);
+            swimmingCheckBox.Margin = new Padding(2);
             swimmingCheckBox.Name = "swimmingCheckBox";
-            swimmingCheckBox.Size = new Size(122, 29);
+            swimmingCheckBox.Size = new Size(83, 19);
             swimmingCheckBox.TabIndex = 0;
             swimmingCheckBox.Text = "Swimming";
             swimmingCheckBox.UseVisualStyleBackColor = true;
@@ -150,9 +161,11 @@
             timeGroupBox.Controls.Add(eveningRadioButton);
             timeGroupBox.Controls.Add(afternoonRadioButton);
             timeGroupBox.Controls.Add(morningRadioButton);
-            timeGroupBox.Location = new Point(1024, 193);
+            timeGroupBox.Location = new Point(717, 116);
+            timeGroupBox.Margin = new Padding(2);
             timeGroupBox.Name = "timeGroupBox";
-            timeGroupBox.Size = new Size(300, 292);
+            timeGroupBox.Padding = new Padding(2);
+            timeGroupBox.Size = new Size(210, 175);
             timeGroupBox.TabIndex = 1;
             timeGroupBox.TabStop = false;
             timeGroupBox.Text = "Time";
@@ -160,9 +173,10 @@
             // eveningRadioButton
             // 
             eveningRadioButton.AutoSize = true;
-            eveningRadioButton.Location = new Point(85, 212);
+            eveningRadioButton.Location = new Point(60, 127);
+            eveningRadioButton.Margin = new Padding(2);
             eveningRadioButton.Name = "eveningRadioButton";
-            eveningRadioButton.Size = new Size(99, 29);
+            eveningRadioButton.Size = new Size(67, 19);
             eveningRadioButton.TabIndex = 2;
             eveningRadioButton.TabStop = true;
             eveningRadioButton.Text = "Evening";
@@ -172,9 +186,10 @@
             // afternoonRadioButton
             // 
             afternoonRadioButton.AutoSize = true;
-            afternoonRadioButton.Location = new Point(85, 128);
+            afternoonRadioButton.Location = new Point(60, 77);
+            afternoonRadioButton.Margin = new Padding(2);
             afternoonRadioButton.Name = "afternoonRadioButton";
-            afternoonRadioButton.Size = new Size(118, 29);
+            afternoonRadioButton.Size = new Size(79, 19);
             afternoonRadioButton.TabIndex = 1;
             afternoonRadioButton.TabStop = true;
             afternoonRadioButton.Text = "Afternoon";
@@ -184,9 +199,10 @@
             // morningRadioButton
             // 
             morningRadioButton.AutoSize = true;
-            morningRadioButton.Location = new Point(85, 44);
+            morningRadioButton.Location = new Point(60, 26);
+            morningRadioButton.Margin = new Padding(2);
             morningRadioButton.Name = "morningRadioButton";
-            morningRadioButton.Size = new Size(105, 29);
+            morningRadioButton.Size = new Size(71, 19);
             morningRadioButton.TabIndex = 0;
             morningRadioButton.TabStop = true;
             morningRadioButton.Text = "Morning";
@@ -197,9 +213,10 @@
             // 
             countryComboBox.FormattingEnabled = true;
             countryComboBox.Items.AddRange(new object[] { "Bulgaria", "Greece", "The Netherlands" });
-            countryComboBox.Location = new Point(232, 250);
+            countryComboBox.Location = new Point(162, 150);
+            countryComboBox.Margin = new Padding(2);
             countryComboBox.Name = "countryComboBox";
-            countryComboBox.Size = new Size(182, 33);
+            countryComboBox.Size = new Size(129, 23);
             countryComboBox.TabIndex = 2;
             countryComboBox.Text = "Choose a country";
             countryComboBox.SelectedIndexChanged += countryComboBox_SelectedIndexChanged;
@@ -207,9 +224,10 @@
             // cityComboBox
             // 
             cityComboBox.FormattingEnabled = true;
-            cityComboBox.Location = new Point(232, 625);
+            cityComboBox.Location = new Point(162, 375);
+            cityComboBox.Margin = new Padding(2);
             cityComboBox.Name = "cityComboBox";
-            cityComboBox.Size = new Size(182, 33);
+            cityComboBox.Size = new Size(129, 23);
             cityComboBox.TabIndex = 3;
             cityComboBox.Text = "Choose a city";
             cityComboBox.SelectedIndexChanged += cityComboBox_SelectedIndexChanged;
@@ -217,26 +235,29 @@
             // initialListBox
             // 
             initialListBox.FormattingEnabled = true;
-            initialListBox.ItemHeight = 25;
-            initialListBox.Location = new Point(651, 570);
+            initialListBox.ItemHeight = 15;
+            initialListBox.Location = new Point(456, 342);
+            initialListBox.Margin = new Padding(2);
             initialListBox.Name = "initialListBox";
-            initialListBox.Size = new Size(180, 129);
+            initialListBox.Size = new Size(127, 79);
             initialListBox.TabIndex = 4;
             // 
             // finalListBox
             // 
             finalListBox.FormattingEnabled = true;
-            finalListBox.ItemHeight = 25;
-            finalListBox.Location = new Point(1084, 570);
+            finalListBox.ItemHeight = 15;
+            finalListBox.Location = new Point(759, 342);
+            finalListBox.Margin = new Padding(2);
             finalListBox.Name = "finalListBox";
-            finalListBox.Size = new Size(180, 129);
+            finalListBox.Size = new Size(127, 79);
             finalListBox.TabIndex = 5;
             // 
             // addHobbiesButton
             // 
-            addHobbiesButton.Location = new Point(941, 570);
+            addHobbiesButton.Location = new Point(659, 342);
+            addHobbiesButton.Margin = new Padding(2);
             addHobbiesButton.Name = "addHobbiesButton";
-            addHobbiesButton.Size = new Size(48, 34);
+            addHobbiesButton.Size = new Size(34, 20);
             addHobbiesButton.TabIndex = 6;
             addHobbiesButton.Text = ">>";
             addHobbiesButton.UseVisualStyleBackColor = true;
@@ -244,9 +265,10 @@
             // 
             // removeHobbiesButton
             // 
-            removeHobbiesButton.Location = new Point(941, 665);
+            removeHobbiesButton.Location = new Point(659, 399);
+            removeHobbiesButton.Margin = new Padding(2);
             removeHobbiesButton.Name = "removeHobbiesButton";
-            removeHobbiesButton.Size = new Size(48, 34);
+            removeHobbiesButton.Size = new Size(34, 20);
             removeHobbiesButton.TabIndex = 7;
             removeHobbiesButton.Text = "<<";
             removeHobbiesButton.UseVisualStyleBackColor = true;
@@ -254,9 +276,10 @@
             // 
             // submitButton
             // 
-            submitButton.Location = new Point(688, 855);
+            submitButton.Location = new Point(481, 545);
+            submitButton.Margin = new Padding(2);
             submitButton.Name = "submitButton";
-            submitButton.Size = new Size(112, 34);
+            submitButton.Size = new Size(78, 20);
             submitButton.TabIndex = 8;
             submitButton.Text = "Submit";
             submitButton.UseVisualStyleBackColor = true;
@@ -264,20 +287,44 @@
             // 
             // adminButton
             // 
-            adminButton.Location = new Point(688, 929);
+            adminButton.Location = new Point(373, 500);
+            adminButton.Margin = new Padding(2);
             adminButton.Name = "adminButton";
-            adminButton.Size = new Size(112, 34);
+            adminButton.Size = new Size(78, 20);
             adminButton.TabIndex = 9;
             adminButton.Text = "Admin";
             adminButton.UseVisualStyleBackColor = true;
             adminButton.Visible = false;
             adminButton.Click += adminButton_Click;
             // 
+            // profileButton
+            // 
+            profileButton.Location = new Point(484, 497);
+            profileButton.Name = "profileButton";
+            profileButton.Size = new Size(75, 23);
+            profileButton.TabIndex = 10;
+            profileButton.Text = "Profile";
+            profileButton.UseVisualStyleBackColor = true;
+            profileButton.Click += profileButton_Click;
+            // 
+            // usersButton
+            // 
+            usersButton.Location = new Point(594, 497);
+            usersButton.Name = "usersButton";
+            usersButton.Size = new Size(75, 23);
+            usersButton.TabIndex = 11;
+            usersButton.Text = "Users";
+            usersButton.UseVisualStyleBackColor = true;
+            usersButton.Visible = false;
+            usersButton.Click += usersButton_Click;
+            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1578, 1144);
+            ClientSize = new Size(1105, 637);
+            Controls.Add(usersButton);
+            Controls.Add(profileButton);
             Controls.Add(adminButton);
             Controls.Add(submitButton);
             Controls.Add(removeHobbiesButton);
@@ -288,6 +335,7 @@
             Controls.Add(countryComboBox);
             Controls.Add(timeGroupBox);
             Controls.Add(hobbiesGroupBox);
+            Margin = new Padding(2);
             Name = "Form1";
             Text = "Vacation";
             Activated += Form1_Activated;
@@ -321,5 +369,7 @@
         private CheckBox guitarCheckBox;
         private CheckBox swimmingCheckBox;
         private Button adminButton;
+        private Button profileButton;
+        private Button usersButton;
     }
 }
